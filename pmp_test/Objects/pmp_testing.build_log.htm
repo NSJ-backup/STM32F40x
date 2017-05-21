@@ -1,0 +1,211 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: •ÏVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Sujin Nam, dd, LIC=4ZLTG-VTGX6-497G2-9G7ZB-9GM9R-G77XU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.20
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DCM.DLL V1.13.7.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.9.0
+ 
+<h2>Project:</h2>
+E:\study\pmp_test\pmp_testing.uvprojx
+Project File Date:  10/04/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+main.h(51): warning:  #1-D: last line of file ends without a newline
+  #endif  /* __MAIN_H__ */
+main.c(146): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "char *restrict"
+        sprintf(volume_str, "vol: %3d", volume);
+main.c(173): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                                sprintf(play_str, "Comp: %3d per", 100*audio_play_size/audio_total_size);
+main.c(257): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                                                        sprintf(play_str, "Comp: %3d per", 100*audio_play_size/audio_total_size);
+main.c(272): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                                                        sprintf(play_str, "Comp: %3d per", 100*audio_play_size/audio_total_size);
+main.c(323): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "char *restrict"
+                                                sprintf(volume_str, "vol: %3d", volume);
+main.c(333): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "char *restrict"
+                                                sprintf(volume_str, "vol: %3d", volume);
+main.c(356): warning:  #111-D: statement is unreachable
+        return 0;
+main.c(135): warning:  #177-D: variable "p_id3" was declared but never referenced
+        MP3_ID3v2 * p_id3 = (MP3_ID3v2 *)audio_buffer1;
+main.c: 9 warnings, 0 errors
+compiling AsciiLib.c...
+compiling LCD.c...
+compiling mp3gui.c...
+compiling TouchPanel.c...
+compiling diskio.c...
+FATFS\diskio.c(100): warning:  #111-D: statement is unreachable
+                        break;
+FATFS\diskio.c: 1 warning, 0 errors
+compiling ff.c...
+compiling sdcard.c...
+compiling search.c...
+..\pmp_test\main.h(51): warning:  #1-D: last line of file ends without a newline
+  #endif  /* __MAIN_H__ */
+SDCARD\search.c(360): warning:  #177-D: variable "cnt" was declared but never referenced
+        uint32_t cnt;
+SDCARD\search.c: 2 warnings, 0 errors
+compiling i2c.c...
+compiling i2s.c...
+compiling UDA1380.c...
+compiling vs1003.c...
+minimp3\vs1003.c(98): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+        VS1003_WriteData(TxBuffer);
+minimp3\vs1003.c(169): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+                        VS1003_WriteData(TxBuffer);
+minimp3\vs1003.c: 2 warnings, 0 errors
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_i2s.c...
+compiling stm32f4xx_hal_i2s_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_rtc.c...
+compiling stm32f4xx_hal_rtc_ex.c...
+compiling stm32f4xx_hal_sd.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_sram.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_ll_fsmc.c...
+compiling stm32f4xx_ll_sdmmc.c...
+assembling startup_stm32f407xx.s...
+compiling system_stm32f4xx.c...
+linking...
+Program Size: Code=47778 RO-data=1986 RW-data=296 ZI-data=9120  
+FromELF: creating hex file...
+".\Objects\pmp_testing.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.0-Beta4.pack
+                ARM::CMSIS:CORE:5.0.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.9.0.pack
+                ::Device:STM32Cube Framework:1.0.0 (API)
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Startup Version: 2.5.0
+   * Component: Classic Version: 1.5.0
+   * Component: Common Version: 1.5.0
+   * Component: Cortex Version: 1.5.0
+   * Component: DMA Version: 1.5.0
+   * Component: GPIO Version: 1.5.0
+   * Component: I2C Version: 1.5.0
+   * Component: I2S Version: 1.5.0
+   * Component: PWR Version: 1.5.0
+   * Component: RCC Version: 1.5.0
+   * Component: RTC Version: 1.5.0
+   * Component: SD Version: 1.5.0
+   * Component: SPI Version: 1.5.0
+   * Component: SRAM Version: 1.5.0
+   * Component: TIM Version: 1.5.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\study\pmp_test\RTE
+  E:\study\pmp_test\RTE\Device\STM32F407VETx
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include
+  E:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  E:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.0
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: Keil::Device:Startup:2.5.0
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.5.0
+      Include file:  CMSIS\Driver\Config\RTE_Device.h
+      Include file:  MDK\Templates\Inc\stm32f4xx_hal_conf.h
+      Source file:   MDK\Templates\Src\stm32f4xx_hal_msp.c
+      Include file:  MDK\Templates\Inc\stm32f4xx_it.h
+      Source file:   MDK\Templates\Src\stm32f4xx_it.c
+      Include file:  MDK\Templates\Inc\main.h
+      Source file:   MDK\Templates\Src\main.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.5.0
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:I2C:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
+
+   * Component: Keil::Device:STM32Cube HAL:I2S:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2s.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2s_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RTC:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:SD:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sd.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_sdmmc.c
+
+   * Component: Keil::Device:STM32Cube HAL:SPI:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c
+
+   * Component: Keil::Device:STM32Cube HAL:SRAM:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sram.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c
+
+   * Component: Keil::Device:STM32Cube HAL:TIM:1.5.0
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
+Build Time Elapsed:  00:01:48
+</pre>
+</body>
+</html>
